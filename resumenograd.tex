@@ -1,0 +1,155 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Ryan Huang} \\ \vspace{1pt}
+    \small (917) 292-6687 $|$ \href{mailto:ryan.huang@cooper.edu}{\underline{ryan.huang@cooper.edu}} $|$
+    \href{https://linkedin.com/in/ryan-huang-745774320}{\underline{linkedin.com/in/ryan-huang-745774320}} $|$
+    \href{https://github.com/ryannhuangg}{\underline{github.com/ryannhuangg}} \\
+    Manhattan, NY
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Cooper Union, Albert Nerken School of Engineering}{Manhattan, NY}
+      {Bachelor of Science in Computer Science}{Expected: May 2030}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: CS101 Survey of Computer Science, EID101 Engineering Design and Problem Solving, ECE150 Digital Logic Design, MA111 Calculus I, MA110 Intro to Linear Algebra}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Jericho High School}{Jericho, NY}
+      {Advanced Regents Diploma with Honors}{June 2026}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.98 unweighted / 4.27 weighted \textbar{} AP Scholar with Distinction}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Digital Logic Morse Code Decoder} $|$ \emph{CD4000-series ICs, Breadboarding, LaTeX}}{October 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered and wired a digital logic circuit across 2 connected breadboards, mapping 4-bit binary inputs to 8 LED outputs for Morse code translation}
+        \resumeItem{Authored an IEEE-formatted technical report in LaTeX detailing truth tables, Karnaugh maps, and SOP/POS Boolean optimization using ``don't care'' conditions for gate minimization}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Bursar -- College Finance Application} $|$ \emph{Electron, HTML/CSS/JS, Supabase}}{June 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed an Electron-based desktop application with 5+ active users for college students}
+        \resumeItem{Implemented email and Google OAuth login, a setup wizard, and features such as savings goals, tuition/loan management, and daily budgeting}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{PiVisualize} $|$ \emph{HTML/CSS/JS, Python}}{November 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built an interactive mathematics visualization website with step-by-step animations of mathematics concepts}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Reliquary} $|$ \emph{Java, NeoForge, Curios API}}{September 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed a Minecraft 1.21.1 NeoForge mod adding custom accessories and talismans using the Curios API}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Leadership Experience \& Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Cooper Union $\mu$Lab -- Student Worker}{August 2026 -- Present}
+      {Manhattan, NY}{}
+      \resumeItemListStart
+        \resumeItem{Diagnose and repair hardware faults across 50+ machines throughout The Cooper Union, such as faulty CPU cooling systems and monitors}
+        \resumeItem{Maintain and troubleshoot Linux/Unix operating systems and software environments across the computer labs infrastructure}
+        \resumeItem{Configured strict CPU and memory cgroup isolation for a 9-node JupyterHub/Slurm cluster, automating configuration deployments via Ansible and a Forgejo CI/CD runner}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Competitive Speedcuber -- Captain $|$ Competitor}{August 2023 -- June 2026}
+      {Jericho, NY}{}
+      \resumeItemListStart
+        \resumeItem{Led Jericho High School to win the USSCL All-Conference Final and become the United States School Cubing League National Champion}
+        \resumeItem{Ranked Top 20--30 in New York and Top 2.5k--3k worldwide in 4 events (5x5, 6x6, 7x7, Square-1)}
+        \resumeItem{Organized and staffed official World Cube Association sanctioned competitions}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+      \resumeItem{\textbf{Long Island Math Fair Gold Medalist} (Apr. 2026) -- research on the effect of spaced repetition on material retention}
+      \resumeItem{\textbf{National Merit Commended Student} (Oct. 2024) \textbar{} \textbf{National Spanish Exam Bronze Medalist} (Apr. 2025)}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, JavaScript, HTML/CSS, LaTeX} \\
+     \textbf{Developer Tools}{: Linux/Unix, Neovim (VimTeX, LuaSnip, Treesitter), Ansible, Supabase} \\
+     \textbf{Hardware \& Systems}{: Digital Logic Design (circuiting), Hardware Troubleshooting}
+    }}
+ \end{itemize}
+
+\end{document}
